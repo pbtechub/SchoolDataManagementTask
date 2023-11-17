@@ -1,0 +1,95 @@
+.createUser {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 40px 70px;
+
+    .cancelBtn {
+        display: flex;
+        justify-content: space-between;
+
+        button {
+            padding: 5px 40px;
+            border: 1px solid skyblue;
+            background-color: transparent;
+            cursor: pointer;
+        }
+    }
+
+    .createUserForm {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        form {
+            width: 100%;
+            
+            display: grid;
+            
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+    
+            input {
+                padding: 8px 8px;
+                border: 1px solid rgb(100, 185, 219);
+                color: rgb(100, 185, 219);
+            }
+            button {
+                font-size: 1rem;
+                border: 1px solid rgb(100, 185, 219);
+                width: 100%;
+                height: 100%;
+                font-weight: 500;
+                cursor: pointer;
+            }
+        }
+    }
+
+}
+
+@media  screen and (max-width: 840px){
+    .createUser {
+        padding: 30px 50px;
+        .createUserForm {
+            width: 100%;
+
+            form {
+                width: 100%;
+                grid-template-columns: 1fr;
+
+                button {
+                   padding:7px 0 ;
+                }
+            }
+        }
+        
+    }
+   
+    
+}
+
+
+
+
+@media  screen and (max-width: 520px){
+    .createUser {
+        padding: 20px;
+        .createUserForm {
+            width: 100%;
+
+            form {
+                width: 100%;
+                grid-template-columns: 1fr;
+
+                button {
+                   padding:7px 0 ;
+                }
+            }
+        }
+        
+    }
+
+  
+}

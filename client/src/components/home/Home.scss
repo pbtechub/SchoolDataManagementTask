@@ -1,0 +1,141 @@
+.home {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    height: auto;
+    
+
+    div {
+        display: flex;
+        justify-content: space-between;
+
+        button {
+            padding: 5px 40px;
+            border: 1px solid skyblue;
+            background-color: transparent;
+            cursor: pointer;
+        }
+        
+    }
+
+    .tableContainer {
+        width: 100%;
+
+        table {
+            width: 100%;
+    
+            thead {
+                border: 1px solid black;
+                background: grey;
+                height: 30px;
+    
+                tr {
+                  
+                    th {
+                        text-align: center;
+                        
+                    }
+                }
+            }
+    
+            tbody {
+                font-size: .9rem;
+                
+    
+                tr{
+                    height: 30px;
+    
+                    td{
+                        text-align: center;
+                        font-size: .8rem;
+    
+                        button {
+                            padding: 0 5px;
+                            border: none;
+                            background-color: transparent;
+                            font-family: 'Montserrat', sans-serif;
+    
+                            cursor: pointer;
+                        }
+    
+                        .edit:hover {
+                            color: green;
+                        }
+    
+                        .delete:hover {
+                            color: red;
+                        }
+    
+                        span {
+                            margin: 0 4px;
+                        }
+                        
+                    }
+                    
+                }
+    
+            }
+        }
+    }
+
+}
+
+@media  screen and (max-width: 840px){
+    
+    .home {
+        padding: 30px;
+       .tableContainer {
+        
+        overflow-x: auto; 
+
+           table {
+               thead {
+                   tr{
+                       th {
+                           font-size: .9rem;
+                           white-space: nowrap;
+                           padding: 0 5px;
+                       }
+                   }
+               }
+
+               tbody {
+
+                tr {
+                    td {
+                        white-space: nowrap;
+                        padding: 0 5px;
+                    }
+                }
+               }
+           }
+       }
+
+    }
+    
+}
+
+
+
+
+@media  screen and (max-width: 420px){
+
+    .home {
+        padding: 20px;
+       .tableContainer {
+       
+           table {
+               thead {
+                   tr{
+                       th {
+                           font-size: .8rem;
+                       }
+                   }
+               }
+           }
+       }
+
+    }
+    
+}

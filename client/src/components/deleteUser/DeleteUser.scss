@@ -1,0 +1,39 @@
+.deleteUser {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    
+    h4 {
+        color: rgb(100, 185, 219);
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .deleteRecord {
+        h4 {
+            color: rgb(100, 185, 219);
+            margin: 5px 0;
+            font-size: .9rem;
+            font-family: 'Poppins', sans-serif;
+        }
+
+    }
+
+    .deleteBtns {
+        display: flex;
+        gap: 100px;
+        button {
+            padding: 5px 40px;
+            border: 1px solid skyblue;
+            background-color: transparent;
+            width: 100%;
+            height: 100%;
+            font-weight: 500;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+        }
+    }
+}
